@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@14,36.7&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Skranji:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #bbc7ce;
+  height: 100%;
+}
+.heading {
+  height: 20vmin;
+}
+.heading h1 {
+  font-size: 15vmin;
+  text-align: center;
+}
+.gamecontainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.game {
+  position: relative;
+  height: 60vmin;
+  width: 60vmin;
+  background: transparent;
+}
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+}
+.row1 {
+  height: fit-content;
+  display: flex;
+  padding-left: 16px;
+  padding-top: 16px;
+  z-index: 5;
+}
+.row2 {
+  height: fit-content;
+  display: flex;
+  padding-left: 16px;
+  z-index: 5;
+}
+.row3 {
+  height: fit-content;
+  display: flex;
+  padding-left: 16px;
+  background: transparent;
+  z-index: 5;
+}
+
+.btn {
+  z-index: 6;
+  height: 18vmin;
+  width: 18vmin;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", system-ui;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 0 0 10px;
+  background: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+#drawmsg {
+  display: none; /* Initially hidden */
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  padding-top: 10%;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 248px;
+  backdrop-filter: blur(5px);
+  font-family: "Honk", system-ui;
+  font-weight: 800;
+  font-style: italic;
+  text-shadow: 0 0 5px;
+  z-index: 10;
+  text-align: center;
+}
+#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  z-index: 3;
+  width: 22vw;
+  height: auto;
+}
+.footer {
+  position: relative;
+  padding-left: 50px;
+}
+.footertext {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #2b363b;
+}

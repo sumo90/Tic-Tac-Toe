@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tic-tac-Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>
+          <a href="https://fontmeme.com/brush-fonts/"
+            ><img
+              src="https://fontmeme.com/permalink/240814/97094e727688d4e083b88bf83f6609c8.png"
+              alt="brush-fonts"
+              border="0"
+          /></a>
+        </h1>
+      </div>
+      <div class="gamecontainer">
+        <div class="game">
+          <div class="row1">
+            <div class="btn" id="r1c1"></div>
+            <div class="btn" id="r1c2"></div>
+            <div class="btn" id="r1c3"></div>
+          </div>
+          <div class="row2">
+            <div class="btn" id="r2c1"></div>
+            <div class="btn" id="r2c2"></div>
+            <div class="btn" id="r2c3"></div>
+          </div>
+          <div class="row3">
+            <div class="btn" id="r3c1"></div>
+            <div class="btn" id="r3c2"></div>
+            <div class="btn" id="r3c3"></div>
+          </div>
+          <img id="bg" src="assets/bg.png" />
+        </div>
+      </div>
+      <div id="drawmsg">DRAW!</div>
+      <div class="footer">
+        <img id="footer" src="assets/giphy-2-unscreen.gif" />
+
+        <div class="footertext">@2024 all rights reserved</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
